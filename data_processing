@@ -1,0 +1,3 @@
+data= open('C:/Users/Afaq/Documents/Test/data.csv','r')
+datalist = data.readlines()
+print(datalist)

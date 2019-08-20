@@ -1,0 +1,32 @@
+#file = open('C:/Users/Afaq/Documents/Test/newfile.txt', 'w')
+#file.write('hello world in the new file\n')
+#file.write('and another line\n')
+#file.close()
+
+
+
+
+#file = open('C:/Users/Afaq/Documents/Test/newfile.txt', 'r')
+#print(file.read(100))
+#print(file.readlines(100))
+
+
+#program to count number of capital letters from a file and output the result into another file
+fh = open('C:/Users/Afaq/Documents/Test/newfile.txt','r')
+filetext= fh.read()
+count=0
+for x in filetext:
+	if x.isupper():
+		count = count+1
+outfile = open('C:/Users/Afaq/Documents/Test/result.txt','w')
+outfile.write(str(count))
+outfile.close()
+fh.close()
+
+
+
+
+
+
+print()
+
